@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget unzip git build-essential cmake ca-certificates gnupg lsb-release\
     libusb-1.0-0-dev libgtk-3-dev udev sudo \
     curl ca-certificates gnupg  iputils-ping  v4l-utils libspdlog-dev \
-    libxcb-cursor0 cmake \
+    libxcb-cursor0 cmake usbutils nano \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* 
 

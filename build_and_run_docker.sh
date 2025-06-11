@@ -127,10 +127,12 @@ if [ "$ACTION" = "run" ] || [ "$ACTION" = "both" ]; then
 
 
 
-  
+    xhost + # Allow X11 forwarding for GUI applications (if needed)
 
     docker run -it --rm \
         --privileged \
+        --env="DISPLAY=$DISPLAY" \
+        --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
         --name "${CONTAINER_NAME}" \
         -v "${HOST_WORKSPACE_DIR}:/${ws_dir}" \
         -v /etc/udev/rules.d:/etc/udev/rules.d \

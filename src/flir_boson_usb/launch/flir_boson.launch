@@ -4,13 +4,13 @@
   <arg name="frame_id" default="boson_camera"/>
 
   <!-- the linux file descriptor location for the camera -->
-  <arg name="dev" default="/dev/video2"/>
+  <arg name="dev" default="/dev/video4"/>
 
   <!-- valid values are 30.0 or 60.0 for Bosons -->
   <arg name="frame_rate" default="30.0"/>
 
   <!-- valid values are RAW16 or YUV -->
-  <arg name="video_mode" default="YUV"/>
+  <arg name="video_mode" default="RAW16"/>
 
   <!-- valid values are TRUE or FALSE -->
   <arg name="zoom_enable" default="FALSE"/>
