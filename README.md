@@ -30,5 +30,17 @@ cd .. && rm -rf package XIMEA_Linux_SP.tgz
 ```
 ### Docker
 
+Build Docker Image 
+```
+sh build_and_run_docker.sh build
+```
+
+Run Docker Image 
+```
+sh build_and_run_docker.sh run
+```
+
+
+
 
 
